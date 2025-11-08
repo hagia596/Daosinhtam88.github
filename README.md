@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thả Quẻ Kinh Dịch Huyền Bí</title>
 <style>
-  body {
-    background: radial-gradient(circle at center, #0d0d0d, #000);
+	body {
+		background: radial-gradient(circle at center, #0d0d0d, #000);
     color: #f0e6d2;
     font-family: 'Times New Roman', serif;
     text-align: center;
@@ -14,14 +14,12 @@
     margin: 0;
     overflow: hidden;
   }
-
   h1 {
     font-size: 2.2em;
     margin-top: 50px;
     text-shadow: 0 0 15px #f5e2a4;
   }
-
-  .circle {
+	.circle {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -36,12 +34,10 @@
     box-shadow: 0 0 40px #c4a962 inset, 0 0 20px #c4a962;
     animation: rotate 10s linear infinite;
   }
-
   @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-
   button {
     background: #c4a962;
     border: none;
@@ -52,12 +48,10 @@
     cursor: pointer;
     transition: 0.3s;
   }
-
   button:hover {
     background: #f5e2a4;
     transform: scale(1.1);
   }
-
   .result {
     font-size: 1.2em;
     margin-top: 30px;
@@ -66,7 +60,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   .smoke {
     position: fixed;
     top: 0;
@@ -77,8 +70,7 @@
     opacity: 0.2;
     z-index: -1;
   }
-
-  .gua-line {
+	.gua-line {
     line-height: 1.5;
   }
 </style>
@@ -92,7 +84,7 @@
 
 <script>
 const hexagrams = [
-  {num: 1,  name: "乾卦 (Càn)", symbol: ["——","——","——","——","——","——"], meaning: "Trời – cương kiện, sáng suốt, khởi đầu, lãnh đạo."},
+  {num: 1,  name: "乾卦 (Càn)", symbol: ["— —","— —","— —","— —","— —","— —"], meaning: "Trời – cương kiện, sáng suốt, khởi đầu, lãnh đạo."},
   {num: 2,  name: "坤卦 (Khôn)", symbol: ["——","——","——","——","——","——"], meaning: "Đất – nhu thuận, bao dung, sinh trưởng vạn vật."},
   {num: 3,  name: "屯卦 (Truân)", symbol: ["——","— —","——","——","——","——"], meaning: "Khởi đầu gian nan, cần kiên định vượt qua."},
   {num: 4,  name: "蒙卦 (Mông)", symbol: ["——","——","——","— —","——","— —"], meaning: "Trẻ dại, cần khai sáng trí tuệ, học hỏi đúng đạo."},
@@ -157,7 +149,6 @@ const hexagrams = [
   {num:63,  name: "既济卦 (Ký Tế)", symbol: ["——","——","——","——","——","——"], meaning: "Đã xong, hoàn thành, chớ chủ quan mà mất."},
   {num:64,  name: "未济卦 (Vị Tế)", symbol: ["——","——","——","——","——","——"], meaning: "Chưa xong, sắp thành mà chưa thành, giữ tâm tỉnh."}
 ];
-
 // Hiển thị quẻ theo chiều dọc
 function renderVertical(symbolArray) {
   return symbolArray.map(line => `<div>${line}</div>`).join('');
