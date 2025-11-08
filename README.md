@@ -66,7 +66,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://i.ibb.co/6YShYWS/smoke.gif') center/cover no-repeat;
+    background: url center/cover no-repeat;
     opacity: 0.2;
     z-index: -1;
   }
@@ -153,7 +153,6 @@ const hexagrams = [
 function renderVertical(symbolArray) {
   return symbolArray.map(line => `<div>${line}</div>`).join('');
 }
-
 function drawHexagram() {
   const random = Math.floor(Math.random() * hexagrams.length);
   const gua = hexagrams[random];
