@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thả Quẻ Kinh Dịch Huyền Bí</title>
+<html lang="vi"
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thả Quẻ Kinh Dịch Huyền Bí</title>
 	<style>	
 		body {
     background: radial-gradient(circle at center, #0d0d0d, #000);
@@ -13,11 +13,11 @@
     height: 100vh;
     margin: 0;
     overflow: hidden; }
- h1 {
+		h1 {
     font-size: 2.2em;
     margin-top: 50px;
     text-shadow: 0 0 15px #f5e2a4; }
-.circle { 
+		.circle { 
 	width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -41,19 +41,19 @@
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;}
-button:hover {
+    transition: 0.3s
+		button:hover {
     background: #f5e2a4;
     transform: scale(1.1);}
-.result {
+		 .result {
     font-size: 1.2em;
     margin-top: 30px;
     line-height: 1.6em;
     max-width: 80%;
     margin-left: auto;
-    margin-right: auto;}
-<style>
-.smoke {
+    margin-right: auto;
+			 <style>
+			 .smoke {
     position: fixed;
     top: 0;
     left: 0;
@@ -62,16 +62,16 @@ button:hover {
     background: url('https://i.ibb.co/6YShYWS/smoke.gif') center/cover no-repeat;
     opacity: 0.2;
     z-index: -1;}
-</style>
+			 </style>
 </head>
-<body>
-<div class="smoke"></div>
-<h1>🔮 Thả Quẻ Kinh Dịch Huyền Bí 🔮</h1>
-<div class="circle" id="guaSymbol">☯</div>
-<button onclick="drawHexagram()">Thả Quẻ</button>
-<div class="result" id="result"></div>
-<script>
-const hexagrams = [
+	<body>
+		<div class="smoke"></div>
+		<h1>🔮 Thả Quẻ Kinh Dịch Huyền Bí 🔮</h1>
+		<div class="circle" id="guaSymbol">☯</div>
+		<button onclick="drawHexagram()">Thả Quẻ</button>
+		<div class="result" id="result"></div>
+		<script>
+			const hexagrams = [
   {name: "乾卦 (Càn)", symbol: "☰", meaning: "Trời – cương kiện, sáng suốt, khởi đầu, lãnh đạo."},
   {name: "坤卦 (Khôn)", symbol: "☷", meaning: "Đất – nhu thuận, bao dung, sinh trưởng vạn vật."},
   {name: "屯卦 (Truân)", symbol: "☳☵", meaning: "Khởi đầu gian nan, cần kiên định vượt qua."},
@@ -80,8 +80,6 @@ const hexagrams = [
   {name: "讼卦 (Tụng)", symbol: "☵☰", meaning: "Tranh chấp, nên dùng lý trí, tránh cứng đối cứng."},
   {name: "师卦 (Sư)", symbol: "☷☵", meaning: "Quân đội, trật tự, cần người lãnh đạo minh triết."},
   {name: "比卦 (Tỷ)", symbol: "☵☷", meaning: "Gắn bó, hợp tác, đồng tâm hiệp lực thì thành công."},
-  // … Có thể thêm đủ 64 quẻ ở đây
-];
 function drawHexagram() {
   const random = Math.floor(Math.random() * hexagrams.length);
   const gua = hexagrams[random];
@@ -92,5 +90,5 @@ function drawHexagram() {
   `;
   const sound = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-small-gong-hit-1955.mp3');
   sound.play()
-</body>
-</html>
+	  </body>
+	  </html>
