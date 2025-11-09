@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thả Quẻ Kinh Dịch Huyền Bí</title>
-<style>
-  body {
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thả Quẻ Kinh Dịch Huyền Bí</title>
+    <style>
+      body {
     background: radial-gradient(circle at center, #0d0d0d, #000);
     color: #f0e6d2;
     font-family: 'Times New Roman', serif;
     text-align: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;}
-  h1 {
+    overflow: hidden; }
+      h1 {
     font-size: 2.2em;
     margin-top: 50px;
-    text-shadow: 0 0 15px #f5e2a4;}
-  .circle {
+    text-shadow: 0 0 15px #f5e2a4; }
+  .circle { 
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -42,10 +42,10 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;}
-  button:hover {
+       button:hover {
     background: #f5e2a4;
     transform: scale(1.1);}
-  .result {
+ .result {
     font-size: 1.2em;
     margin-top: 30px;
     line-height: 1.6em;
